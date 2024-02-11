@@ -5,6 +5,7 @@ set nocompatible
 filetype on
 filetype plugin on
 filetype indent on
+set clipboard+=unnamedplus
 set cursorline
 set cursorcolumn
 set shiftwidth=2
