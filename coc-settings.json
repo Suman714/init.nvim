@@ -1,0 +1,74 @@
+{
+  "diagnostic.checkCurrentLine": true,
+  "languageserver": {
+    "clangd": {
+      "command": "clangd",
+      "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+    },
+    "rust": {
+      "command": "rust-analyzer",
+      "filetypes": ["rust"]
+    },
+    "ocaml": {
+      "command": "ocamllsp",
+      "filetypes": ["ocaml"]
+    },
+    "go": {
+      "command": "gopls",
+      "filetypes": ["go"]
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": [
+        "--lsp"
+      ],
+      "rootPatterns": [
+        ".stack.yaml",
+        ".hie-bios",
+        "BUILD.bazel",
+        "cabal.config",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ],
+      "initializationOptions": {
+        "languageServerHaskell": {
+          "hlintOn": true,
+          "maxNumberOfProblems": 10,
+          "completionSnippetsOn": true
+        }
+      }
+    }
+  },
+  "suggest.completionItemKindLabels": {
+    "text" : "",
+    "method" : "󰆧",
+    "function" : "󰊕",
+    "constructor" : "",
+    "field" : "󰇽",
+    "variable" : "󰂡",
+    "class" : "󰠱",
+    "interface" : "",
+    "module" : "",
+    "property" : "󰜢",
+    "unit" : "",
+    "value" : "󰎠",
+    "enum" : "",
+    "keyword" : "󰌋",
+    "snippet" : "",
+    "color" : "󰏘",
+    "file" : "󰈙",
+    "reference" : "",
+    "folder" : "󰉋",
+    "enumMember" : "",
+    "constant" : "󰏿",
+    "struct" : "",
+    "event" : "",
+    "operator" : "󰆕",
+    "typeParameter" : "󰅲"
+  }
+}
